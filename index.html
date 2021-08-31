@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Змейка</h1>
+    <h2 id="score">Score:0</h2>
+    <canvas id="canvas"></canvas>
+    <button id="restart" class="start">Restart</button>
+    <div class="info show" id="info">
+      <div class="info-message" id="info-message">
+        <p>Добро пожаловать в игру змейка!</p>
+        <!-- <label for="size">Введите размер поля:</label>
+        <input type="number" placeholder="10" id="size" class="options" /> -->
+        <label for="level">Введите желаемый уровень сложности:</label>
+        <select name="level" id="level" class="options">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+        <p>
+          Правила: твоя цель - набрать как можно больше очков, поедая случайно
+          появляющиеся квадратики. При столкновении со стенами, с толом змейки и
+          при изменении направления на 360' игра заканчивается.Удачи
+        </p>
+      </div>
+      <button id="start" class="start">Start</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
